@@ -13,7 +13,7 @@ const data = {
 }
 
 app.get('/teacher', (req, res) => {
-    res.send(data);
+    res.json(data);
 });
 
 app.listen(PORT, () => {
