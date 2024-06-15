@@ -3,7 +3,7 @@ require('dotenv').config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.get('/', (req, res) => {
+app.get('/api/home', (req, res) => {
     res.send('Hello from Node.js backend!');
 });
 
@@ -13,7 +13,9 @@ const data = {
 }
 
 app.get('/teacher', (req, res) => {
-    res.json(data);
+    res.json(
+       {data} 
+    );
 });
 
 app.listen(PORT, () => {
