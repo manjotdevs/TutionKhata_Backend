@@ -13,7 +13,9 @@ const data = {
 }
 
 app.get('/teacher', (req, res) => {
-    res.send(data);
+    res.send(<h1>
+       {data} 
+    </h1>);
 });
 
 app.listen(PORT, () => {
