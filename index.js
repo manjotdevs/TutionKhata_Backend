@@ -7,9 +7,13 @@ app.get('/', (req, res) => {
     res.send('Hello from Node.js backend!');
 });
 
+const data = {
+    teachers: "manjot",
+    student:"raj"
+}
 
 app.get('/teacher', (req, res) => {
-    res.send('Hello from Node.js backend!');
+    res.send(data);
 });
 
 app.listen(PORT, () => {
