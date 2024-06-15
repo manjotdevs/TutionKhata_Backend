@@ -7,6 +7,11 @@ app.get('/', (req, res) => {
     res.send('Hello from Node.js backend!');
 });
 
+
+app.get('/teacher', (req, res) => {
+    res.send('Hello from Node.js backend!');
+});
+
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
